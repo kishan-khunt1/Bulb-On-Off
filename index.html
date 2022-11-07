@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BULB ON-OFF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container m-4 text-center">
+    <img src="bulb-off.png" style="width: 40%;height: 40%;" id="imgchange" alt="bulb png"><br>
+    <button class="btn btn-outline-success " id="bulb-on" onclick="BULBON()">Turn On</button>
+    <button class="btn btn-outline-danger m-3" id="bulb-off" onclick="BULBOFF()">Turn Off</button>
+    <script>
+        
+        imgchange=document.getElementById("imgchange");
+        function BULBON() {
+            imgchange.src="bulb-on.png";
+        }
+        function BULBOFF() {
+            imgchange.src="bulb-off.png";
+        }
+    </script>
+    </div>
+  </body>
+</html>
